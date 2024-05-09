@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { IProduct } from './models/product';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent {
   title = 'Store';
-  products: any[] = [];
+  products: IProduct[] = [];
 
   constructor(private http:HttpClient){}
 
